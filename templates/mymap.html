@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c69918f13cf94ccd9e2e6baea6717c7a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c69918f13cf94ccd9e2e6baea6717c7a" ></div>
+        
+</body>
+<script>    
+    
+            var map_c69918f13cf94ccd9e2e6baea6717c7a = L.map(
+                "map_c69918f13cf94ccd9e2e6baea6717c7a",
+                {
+                    center: [41.495544, -81.685285],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6fbaaa8425e8469f853d19e42bfc0a0a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+            var marker_7d4c532fea924b9ca23e59930e2a24d3 = L.marker(
+                [41.495544, -81.685285],
+                {}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_3e63852e703b4f2dbcde6f1a7f56b182 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff1cfdcd25774b609318724e95bd0e5d = $(`<div id="html_ff1cfdcd25774b609318724e95bd0e5d" style="width: 100.0%; height: 100.0%;">Home Plate - Progressive Field</div>`)[0];
+            popup_3e63852e703b4f2dbcde6f1a7f56b182.setContent(html_ff1cfdcd25774b609318724e95bd0e5d);
+        
+
+        marker_7d4c532fea924b9ca23e59930e2a24d3.bindPopup(popup_3e63852e703b4f2dbcde6f1a7f56b182)
+        ;
+
+        
+    
+    
+            marker_7d4c532fea924b9ca23e59930e2a24d3.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_58209c9db77242df93546a0b36433443 = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1773.6311999999998, "stroke": true, "weight": 5}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_81462d4bafba4df59c394bc726963405 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_602268767edc4dbfb1f5fd40f4c8c39f = $(`<div id="html_602268767edc4dbfb1f5fd40f4c8c39f" style="width: 100.0%; height: 100.0%;">Alex Bregman, 5819.0 feet</div>`)[0];
+            popup_81462d4bafba4df59c394bc726963405.setContent(html_602268767edc4dbfb1f5fd40f4c8c39f);
+        
+
+        circle_58209c9db77242df93546a0b36433443.bindPopup(popup_81462d4bafba4df59c394bc726963405)
+        ;
+
+        
+    
+    
+            circle_58209c9db77242df93546a0b36433443.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e7e16ff720b04bd2aa997549158059c8 = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1592.8848, "stroke": true, "weight": 5}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_6a81cec5a28f4b79a53248739188a770 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0e345a2c7db4305844f1a00fb7aebb0 = $(`<div id="html_d0e345a2c7db4305844f1a00fb7aebb0" style="width: 100.0%; height: 100.0%;">Carlos Santana, 5226.0 feet</div>`)[0];
+            popup_6a81cec5a28f4b79a53248739188a770.setContent(html_d0e345a2c7db4305844f1a00fb7aebb0);
+        
+
+        circle_e7e16ff720b04bd2aa997549158059c8.bindPopup(popup_6a81cec5a28f4b79a53248739188a770)
+        ;
+
+        
+    
+    
+            circle_e7e16ff720b04bd2aa997549158059c8.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6e69120c3cdd4a168a85653dac8a087a = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7547.152799999998, "stroke": true, "weight": 5}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_545914b8c5a5465ca45d02997b4587da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5de95f788a0040d2a577c66d99ca6587 = $(`<div id="html_5de95f788a0040d2a577c66d99ca6587" style="width: 100.0%; height: 100.0%;">Joc Pederson, 24761.0 feet</div>`)[0];
+            popup_545914b8c5a5465ca45d02997b4587da.setContent(html_5de95f788a0040d2a577c66d99ca6587);
+        
+
+        circle_6e69120c3cdd4a168a85653dac8a087a.bindPopup(popup_545914b8c5a5465ca45d02997b4587da)
+        ;
+
+        
+    
+    
+            circle_6e69120c3cdd4a168a85653dac8a087a.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a6ce2d06777e4597bb276e9f6bb64812 = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2281.7328, "stroke": true, "weight": 5}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_03726448f3ee49e39743d5221a414f2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c60abd2c9f644c36a6bc0f2296b7f813 = $(`<div id="html_c60abd2c9f644c36a6bc0f2296b7f813" style="width: 100.0%; height: 100.0%;">Josh Bell, 7486.0 feet</div>`)[0];
+            popup_03726448f3ee49e39743d5221a414f2f.setContent(html_c60abd2c9f644c36a6bc0f2296b7f813);
+        
+
+        circle_a6ce2d06777e4597bb276e9f6bb64812.bindPopup(popup_03726448f3ee49e39743d5221a414f2f)
+        ;
+
+        
+    
+    
+            circle_a6ce2d06777e4597bb276e9f6bb64812.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6fe5f26c4bad44bdb1901aa39e84508e = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1712.0616, "stroke": true, "weight": 5}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_42c4ea3a3c644fd58aaed1bb85e203b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_311d37f4ba454109bb0363416b6909b3 = $(`<div id="html_311d37f4ba454109bb0363416b6909b3" style="width: 100.0%; height: 100.0%;">Matt Chapman, 5617.0 feet</div>`)[0];
+            popup_42c4ea3a3c644fd58aaed1bb85e203b8.setContent(html_311d37f4ba454109bb0363416b6909b3);
+        
+
+        circle_6fe5f26c4bad44bdb1901aa39e84508e.bindPopup(popup_42c4ea3a3c644fd58aaed1bb85e203b8)
+        ;
+
+        
+    
+    
+            circle_6fe5f26c4bad44bdb1901aa39e84508e.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_216ad30c189f48d9a3fa11314cb9992c = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7355.738400000002, "stroke": true, "weight": 5}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_d1fc369739534e4ab6b69847e9dbb6b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_462bd34b27d940b8bc7498a54e3ef643 = $(`<div id="html_462bd34b27d940b8bc7498a54e3ef643" style="width: 100.0%; height: 100.0%;">Pete Alonso, 24133.0 feet</div>`)[0];
+            popup_d1fc369739534e4ab6b69847e9dbb6b0.setContent(html_462bd34b27d940b8bc7498a54e3ef643);
+        
+
+        circle_216ad30c189f48d9a3fa11314cb9992c.bindPopup(popup_d1fc369739534e4ab6b69847e9dbb6b0)
+        ;
+
+        
+    
+    
+            circle_216ad30c189f48d9a3fa11314cb9992c.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8a8b2be88fc84a708bd90199fa572f39 = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5700.9792000000025, "stroke": true, "weight": 5}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_56df4b6e41254eb7a43dbf7ffb34a2c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fba6b00150544331bab6df36692d5044 = $(`<div id="html_fba6b00150544331bab6df36692d5044" style="width: 100.0%; height: 100.0%;">Ronald Acuna Jr., 18704.0 feet</div>`)[0];
+            popup_56df4b6e41254eb7a43dbf7ffb34a2c5.setContent(html_fba6b00150544331bab6df36692d5044);
+        
+
+        circle_8a8b2be88fc84a708bd90199fa572f39.bindPopup(popup_56df4b6e41254eb7a43dbf7ffb34a2c5)
+        ;
+
+        
+    
+    
+            circle_8a8b2be88fc84a708bd90199fa572f39.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_81a2f384d98341b0ab641fac0f49409f = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11411.102400000007, "stroke": true, "weight": 5}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_634ab7402976451898b30ba93e4ffa6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6348279a7b8e473b9ed262e5a8daad29 = $(`<div id="html_6348279a7b8e473b9ed262e5a8daad29" style="width: 100.0%; height: 100.0%;">Vladimir Guerrero Jr., 37438.0 feet</div>`)[0];
+            popup_634ab7402976451898b30ba93e4ffa6e.setContent(html_6348279a7b8e473b9ed262e5a8daad29);
+        
+
+        circle_81a2f384d98341b0ab641fac0f49409f.bindPopup(popup_634ab7402976451898b30ba93e4ffa6e)
+        ;
+
+        
+    
+    
+            circle_81a2f384d98341b0ab641fac0f49409f.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_de62583a5df24965b8be83640ce00640 = L.circle(
+                [41.495544, -81.685285],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39375.283200000005, "stroke": true, "weight": 3}
+            ).addTo(map_c69918f13cf94ccd9e2e6baea6717c7a);
+        
+    
+        var popup_9a54d62f8f9d445a88437e8c18bc7e93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac77aba3afcc4125847a4cd5ea625d8b = $(`<div id="html_ac77aba3afcc4125847a4cd5ea625d8b" style="width: 100.0%; height: 100.0%;">All Batters, 129184.0 feet</div>`)[0];
+            popup_9a54d62f8f9d445a88437e8c18bc7e93.setContent(html_ac77aba3afcc4125847a4cd5ea625d8b);
+        
+
+        circle_de62583a5df24965b8be83640ce00640.bindPopup(popup_9a54d62f8f9d445a88437e8c18bc7e93)
+        ;
+
+        
+    
+    
+            circle_de62583a5df24965b8be83640ce00640.bindTooltip(
+                `<div>
+                     Click For Information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
